@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF5722"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity 3"
+        android:textSize="36sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/txtThirdCounter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="80sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnThirdToMain"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="GO TO ACTIVITY 1"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnThirdToHello"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="GO TO ACTIVITY 2" />
+
+</LinearLayout>
