@@ -8,8 +8,10 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class HelloActivity extends AppCompatActivity {
-    TextView txtHelloCounter;
-    Button btnBackMain;
+    private TextView txtHelloCounter;
+    private Button btnBackMain;
+    private int counter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,8 +20,7 @@ public class HelloActivity extends AppCompatActivity {
         txtHelloCounter = findViewById(R.id.txtHelloCounter);
         btnBackMain = findViewById(R.id.btnBackMain);
 
-        int counter = getIntent().getIntExtra("counter", 0);
-
+        counter = getIntent().getIntExtra("counter", 0);
         txtHelloCounter.setText(String.valueOf(counter));
 
         btnBackMain.setOnClickListener(v -> {
@@ -28,6 +29,7 @@ public class HelloActivity extends AppCompatActivity {
                     MainActivity.class
             );
             intent.putExtra("counter", counter);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
             finish();
         });
