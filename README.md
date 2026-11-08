@@ -1,4 +1,4 @@
-# 📱 Razvoj mobilnih aplikacij – Naloga 5
+# 📱 Razvoj mobilnih aplikacij
 ## Delo z različnimi aktivnostmi (Android)
 
 🔗 **GitHub repozitorij:** [https://github.com/stefancic-tomaz/Activities](https://github.com/stefancic-tomaz/Activities)
