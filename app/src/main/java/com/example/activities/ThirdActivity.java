@@ -54,11 +54,11 @@ public class ThirdActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        if (swipeListener != null && swipeListener.onTouch(null, event)) {
-            return true;
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        if (swipeListener != null) {
+            swipeListener.onTouch(null, ev);
         }
-        return super.onTouchEvent(event);
+        return super.dispatchTouchEvent(ev);
     }
 
     private void goToMainActivity() {
